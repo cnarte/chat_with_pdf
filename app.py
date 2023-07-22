@@ -23,6 +23,7 @@ async def upload_pdf(pdf: UploadFile = File(...)):
         with open(file_path, "wb") as f:
             f.write(contents)
         naval_chat_bot.add("pdf_file", file_path)
+        os.remove(file_path)
         return {"message": "PDF file uploaded and added successfully."}
     else:
         return {"message": "Only PDF files are allowed."}
