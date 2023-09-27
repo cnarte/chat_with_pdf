@@ -4,7 +4,7 @@ from pydantic import BaseModel
 from typing import List
 from embedchain import OpenSourceApp
 import os
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "klnalkgnkankdnfgkldaflkn"
 
 
 app = FastAPI()
